@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MyBookmark</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div class="profile-info">
+                <img src="https://raw.githubusercontent.com/PranayTejaReddy27/images/main/passport_photo.jpg" alt="" class="profile-img" id="profile-img">
+                <label for="profile-img" class="profile-name" id="profile-name">PranayTeja27</label>
+            </div>
+            <h2 id="select-category" class="selete-category">MyBookmarks</h2>
+            
+            <div class="search-bar">
+                <input type="search" name="query" placeholder="Search" class="search" <button type="submit" class="search-img"><img src="https://img.icons8.com/?size=29&id=132&format=png"></button>
+                
+            </div>
+            <img id="pluse" src="https://img.icons8.com/?size=30&id=1501&format=png" alt="">
+        </header>
+        <div id="content" class="content">
+            <div class="index">
+                <div class="index-list">
+                    <ul>
+                        <li><img id="bookmark" src="https://img.icons8.com/?size=26&id=NlUo8qf0z0qV&format=png" alt=""><label for="bookmark">MyBookmarks</label></li>
+                        <li><img id="category" src="https://img.icons8.com/?size=26&id=13705&format=png" alt=""><label for="category">category</label></li>
+                        <li><img id="bin" src="https://img.icons8.com/?size=26&id=4887&format=png" alt=""><label for="bin">bin</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contect-display" class="content-display">
+                <div class="display-header">
+                    <img src="https://img.icons8.com/?size=28&id=f1fhADRkTrAU&format=png" alt="">
+                    <label for="browser">sort</label>
+                    <input list="browsers" id="browser" class="browser" name="browser">
+                    <datalist id="browsers">
+                        <option value="By Name">
+                        <option value="By Time">
+                    </datalist>
+                </div>
+                <div id="result-bookmarks" class="result-bookmarks">
+                    <div id="result-img" class="result-img">
+                        <img src="https://img.icons8.com/?size=86&id=Xy10Jcu1L2Su&format=png" alt="">
+                    </div>
+                    <div id="result-info" class="result-info">
+                        <h2>bookmark1</h2>
+                        <h3>http://somthing.in/index</h3>
+                        <h4 id="test">hello</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="../javascript/index.mjs"></script>
+
+</html>
