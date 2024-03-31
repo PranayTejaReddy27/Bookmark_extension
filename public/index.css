@@ -43,6 +43,7 @@ header h2{
 }
 .search{
     height: 30px;
+    border-radius: 4px;
     border: 2px solid black;
 }
 .content{
