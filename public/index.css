@@ -97,3 +97,67 @@ header h2{
     margin-left: 1100px ;
     margin-top: 20px;
 }
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  height: 200px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: -400px; /* Adjust this value to position the dropdown to the left of the image */
+}
+
+/* Style the dropdown link (optional) */
+.dropdown-content a {
+  color: black;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+/* Style the dropdown link on hover (optional) */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+.form-group label {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Optional: To make the button appear at the bottom */
+button[type="submit"] {
+    align-self: flex-end;
+    margin-left: 100px;
+    border: 2px solid black;
+    height: 20px;
+    width: 60px;
+}
+.box{
+    margin-left: 80px;
+}
+.gapp{
+    margin-bottom: 30px;
+}

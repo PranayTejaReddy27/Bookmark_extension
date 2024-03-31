@@ -18,8 +18,33 @@
                 <input type="search" name="query" placeholder="Search" class="search" <button type="submit" class="search-img"><img src="https://img.icons8.com/?size=29&id=132&format=png" alt="_"></button>
                 
             </div>
-            <img id="pluse" src="https://img.icons8.com/?size=30&id=1501&format=png" alt="">
+            <div class="dropdown">
+                <img id="pluse" src="https://img.icons8.com/?size=30&id=1501&format=png" alt="">
+                <div id="myDropdown" class="dropdown-content">
+                  <!-- Your form content goes here -->
+                  <div class="box">
+                    <form>
+                      <div class="gapp">
+                          <label for="url">URL:</label>
+                          <input type="text" id="url" name="URL">
+                      </div>
+                      <div class="gapp">
+                          <label for="tags">#Tags:</label>
+                          <input type="text" id="tags" name="tags">
+                      </div>
+                      <div class="gapp">
+                          <label for="browser">Category:</label>
+                          <input list="browsers" name="browser" id="browser">
+                      </div>                   
+                      <!-- Other form fields -->
+                      <button type="submit" onclick="newBookmark()">Save</button>
+                    </form>
+                  </div>
+                </div>
+              </div> 
         </header>
+        <h4 id="test1"></h4>
+        <h4 id="test2"></h4>  
         <div id="content" class="content">
             <div class="index">
                 <div class="index-list">
@@ -51,7 +76,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>          
     </body>
     <script type="module" src="index.js"></script>
 
