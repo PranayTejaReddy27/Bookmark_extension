@@ -82,6 +82,7 @@ header h2{
     margin-left: 70px;
     align-items: center;
     display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -118,7 +119,7 @@ header h2{
 }
 
 /* Style the dropdown link (optional) */
-.dropdown-content a {
+.dropdown-content  {
   color: black;
   padding: 8px 0;
   text-decoration: none;
@@ -129,22 +130,9 @@ header h2{
 }
 
 /* Style the dropdown link on hover (optional) */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
 .dropdown-content {
     display: flex;
     flex-direction: column;
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px; /* Adjust as needed */
-}
-
-.form-group label {
-    margin-right: 10px; /* Adjust as needed */
 }
 
 /* Optional: To make the button appear at the bottom */
@@ -160,4 +148,13 @@ button[type="submit"] {
 }
 .gapp{
     margin-bottom: 30px;
+}
+.last{
+    align-items: center;
+    display: flex;
+    margin-left: 535px;
+}
+.last1{
+    align-items: center;
+    display: flex;
 }

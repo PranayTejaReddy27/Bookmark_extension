@@ -23,7 +23,7 @@
                 <div id="myDropdown" class="dropdown-content">
                   <!-- Your form content goes here -->
                   <div class="box">
-                    <form>
+                    <form action="/submit-form" method="POST">
                       <div class="gapp">
                           <label for="url">URL:</label>
                           <input type="text" id="url" name="URL">
@@ -37,7 +37,7 @@
                           <input list="browsers" name="browser" id="browser">
                       </div>                   
                       <!-- Other form fields -->
-                      <button type="submit" onclick="newBookmark()">Save</button>
+                      <button id="submitBtn" type="submit">Save</button>
                     </form>
                   </div>
                 </div>
@@ -66,13 +66,33 @@
                     </datalist>
                 </div>
                 <div id="result-bookmarks" class="result-bookmarks">
+                    <dir class="last1">
                     <div id="result-img" class="result-img">
                         <img src="https://img.icons8.com/?size=86&id=Xy10Jcu1L2Su&format=png" alt="">
                     </div>
                     <div id="result-info" class="result-info">
-                        <h2>bookmark1</h2>
-                        <h3>http://somthing.in/index</h3>
-                        <h4 id="test">hello</h4>
+                        <h2>Instagram</h2>
+                        <h3>http://instagram.com/Home</h3>
+                        <h4 id="test">social media</h4>
+                    </div><br><br><br><br></div>
+                    <div class="last">
+                    <div id="result-img" class="result-img">
+                        <img src="https://img.icons8.com/?size=86&id=118497&format=png" alt="">
+                    </div>
+                    <div id="result-info" class="result-info">
+                        <h2>facebook</h2>
+                        <h3>http://facebook.com/profile</h3>
+                        <h4 id="test">connecting people</h4>
+                    </div><br><br><br><br></div>
+                    <div class="last">
+                    <div id="result-img" class="result-img">
+                        <img src="https://img.icons8.com/?size=86&id=111057&format=png" alt="">
+                    </div>
+                    <div id="result-info" class="result-info">
+                        <h2>X</h2>
+                        <h3>http://twitter.com/activity</h3>
+                        <h4 id="test">Free Speech</h4>
+                    </div><br><br>
                     </div>
                 </div>
             </div>
