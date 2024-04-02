@@ -16,7 +16,7 @@ let clientIp = '';
 
 // Middleware to retrieve client's IP address
 app.use((req, res, next) => {
-  clientIp = req.ip.replace(/[^a-zA-Z0-9]/g, '_'); // Sanitize IP address for use as a table name
+  clientIp = req.ip.replace(/[/[.:]/g, '_'); // Sanitize IP address for use as a table name
 
   // Check if table exists for the client's IP address
   const query = `SHOW TABLES LIKE '${clientIp}'`;
@@ -98,7 +98,7 @@ app.post('/submit-form', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
