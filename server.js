@@ -75,17 +75,14 @@ app.use(bodyParser.json());
 app.use(express.json()); // Middleware to parse JSON bodies
 app.post('/submit-form', (req, res) => {
   // Extract form data from request body
-  const { url, tags, browser } = req.body;
+  const { url, tags, category } = req.body;
+
+  let title = "Bookmark";
+  let faviconLink ="https://img.icons8.com/?size=256&id=3685&format=png";
+  let favorite = 1;
 
   // Construct the data object to be inserted into the database
-  const data = {
-    title: "Bookmark", // Assuming you want to leave the title empty initially
-    url: url,
-    faviconLink: "https://img.icons8.com/?size=256&id=3685&format=png",
-    tags: tags,
-    category: browser,
-    favorite: 1
-  };
+  const data = {title, url,faviconLink,tags,category,favorite};
 
   // Perform database operation to insert the data into the specified table
   const query = `INSERT INTO ${clientIp} SET ?`;
