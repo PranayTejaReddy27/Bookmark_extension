@@ -8,7 +8,8 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'bookmarks'
+  database: 'bookmarks',
+  port: 3306
 });
 
 let clientIp = '';
@@ -97,7 +98,7 @@ app.post('/submit-form', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
