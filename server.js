@@ -57,21 +57,6 @@ app.post('/endpoint', (req, res) => {
   });
 });
 
-
-// Define a route to fetch data from MySQL and send it to the client
-app.get('/data', (req, res) => {
-  const query = `SELECT * FROM ${client_Ip}`;
-  connection.query(query, (error, results) => {
-    if (error) {
-      console.error('Error executing MySQL query:', error);
-      res.status(500).json({ error: 'Internal Server Error' });
-      return;
-    }
-    res.json(results); // Sending fetched data as JSON response
-  });
-});
-
-
 app.post('/submit-form', (req, res) => {
   // Extract form data from request body
   const { url, tags, category } = req.body;
